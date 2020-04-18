@@ -1,0 +1,10 @@
+<div class="container">
+<h1><%= @article.title %></h1>
+<h5><%= link_to "Edit this article", edit_article_path %></h5>
+</div>
+<p><%= @article.content %></p>
+<a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/<%= @article.id %>">
+  Delete the article
+</a>
+<h5><%= link_to "Back to articles menu", articles_path %></h5>
+
